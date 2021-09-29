@@ -1,0 +1,100 @@
+body{margin:1px;
+box-sizing: border-box;}
+li{display: inline;
+font-size: 20px;
+padding:10px;word-spacing: 0;}
+.logo{word-spacing: 10px;padding-top:5px;}
+.logo>img{border-radius: 3%;border: 1px solid black;}
+a{color:black;text-decoration: none;}
+.logohead{font-family:'Lucida Handwriting',cursive;font-weight: 800;position: relative;top:-20px;font-size: 25px;word-spacing: 0;}
+header{
+background-color:#D1B000;
+display: flex;
+flex-direction: row;
+padding:10px;
+align-items:center;
+position: relative;}
+.log{position: absolute;
+right:80px;}
+.navbar{position: absolute;
+    right:20%;
+    word-spacing: 10px;
+}
+li:hover{background-color: skyblue;border-radius: 20px;}
+header button:hover{background-color: black ;color:gold;}
+header button{border-radius: 50%;padding: 10px;width:80px;}
+/*slider*/
+.slidemain{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    padding: 16px;
+    margin-top: -22px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next{right:0;
+border-radius:3px 0 0 3px;}
+.prev:hover,.next:hover{
+    background-color: rgba(255,255,0,0.8);
+}
+.text{color:#f2f2f2;
+font-size:15px;
+padding: 8px 12px;
+position: absolute;
+bottom:30px;
+width:100%;
+text-align: center;}
+.numbertext{color:#f2f2f2;
+    font-size:12px;
+    padding: 8px 12px;
+    position: absolute;
+top:0px;}
+.dots{position: absolute;bottom: 10px;width: 100%;text-align: center;}
+.dot{
+    cursor:pointer;
+    height:15px;
+    width: 15px;
+    margin:0 2px;
+    background-color: rgb(170, 19, 19);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,.dot:hover{
+    background-color: #717171;
+}
+.fade{animation-name:fade;animation-duration: 3s;}
+@keyframes fade {from{opacity: .4;}
+to{opacity: 1;}
+}
+.types{width: 100%;
+text-align: center;}
+hr{width: 300px;
+border:1px solid black;}
+#spclcontainer{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:space-evenly;}
+#spclcontainer{display: none;}
+.desc{padding: 20px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+}
+footer{
+    padding: 10px;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+}
+footer>a{font-family:'Lucida Handwriting',cursive;"}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRANDEUR HOTELS</title>
+        <link href="grandeurhotels.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6ad93e522d.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+<img src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-real-estate-logohotel-logobuilding-logoproperty-logovector-logo-template-png-image_3633486.jpg" width="60px" height="60px">
+<span class="logohead">Grandeur Hotels</span>
+                </div>
+            <div class="navbar" >
+<ul class="nav">
+    <li><a href="#">Our hotels</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact us</a></li>   
+</ul>
+            </div>
+        <div class="log">
+            <button class="signup">signup</button>
+            <button class="login">login</button>
+        </div>
+        </header>
+        <br>
+        <div class="slidemain">
+            <div class="myslides fade">
+                <div class="numbertext">1/3</div>
+ <img src="http://hotelinteriordesigns.eu/wp-content/uploads/2017/04/10-Top-Hotel-Interior-Designs-All-Over-The-World-1.jpg" width="100%" height="500px">
+ <div class="text">one</div>
+            </div>
+            <div class="myslides fade">
+                <div class="numbertext">2/3</div>
+ <img src="http://hotelinteriordesigns.eu/wp-content/uploads/2017/04/10-Top-Hotel-Interior-Designs-All-Over-The-World-3.jpg" width="100%" height="500px">
+ <div class="text">two</div>
+            </div>
+            <div class="myslides fade">
+                <div class="numbertext">3/3</div>
+ <img src="http://hotelinteriordesigns.eu/wp-content/uploads/2017/04/10-Top-Hotel-Interior-Designs-All-Over-The-World-7.jpg" width="100%" height="500px">
+ <div class="text">three</div>
+            </div>
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        </div>
+        <script>
+            var slideIndex=0;
+            showSlides(slideIndex);
+            function plusSlide(n){slideIndex=slideIndex+n;
+            showSlides(slideIndex);}
+            function currentSlide(n){ 
+                 slideIndex=n;
+            showSlides(slideIndex);}
+            function showSlides(n){
+                let i;
+                let slides=document.getElementsByClassName("myslides");
+                let dots=document.getElementsByClassName("dot");
+                if(slideIndex<0){slideIndex=slides.length-1;}
+                if(slideIndex>=slides.length){
+                    slideIndex=0;
+                }
+                for(i=0;i<slides.length;i++){
+                    slides[i].style.display="none";                
+            }
+            for(i=0;i<dots.length;i++){
+                dots[i].className=dots[i].className.replace(" active","");
+            }
+            slides[slideIndex].style.display="block";
+            dots[slideIndex].className+=" active";}
+            setTimeout(showSlides,10000,slideIndex++);
+            function displayroom(){
+                document.getElementById("spclcontainer").style.display = "flex";}
+        </script>
+
+        <br>
+        <div class="types" style="font-family:'Lucida Handwriting',cursive;"><a href="#" onclick="displayroom()">rooms available:</a></div>
+        <hr>
+        <div id="spclcontainer" style="font-family:'Lucida Handwriting',cursive;">
+            <div class="room"> 
+                <img src="https://setupmyhotel.com/images/Room-Type-Single-Room.jpg?ezimgfmt=rs:300x250/rscb333/ng:webp/ngcb333" width="200" height="200">
+               <br> <span>Single</span>
+            </div>
+            <div class="room">
+                <img src="https://setupmyhotel.com/images/Room-Type-Double-Room.jpg?ezimgfmt=rs:300x250/rscb333/ng:webp/ngcb333" width="200" height="200">
+                <br><span>Double</span>
+            </div>
+            <div class="room">
+                <img src="https://setupmyhotel.com/images/Room-Type-Triple-Room.jpg?ezimgfmt=rs:300x250/rscb333/ng:webp/ngcb333" width="200" height="200">
+                <br><span>Triple</span>
+            </div>
+            <div class="room">
+                <img src="https://setupmyhotel.com/images/Room-Type-quad-Room.jpg?ezimgfmt=rs:300x250/rscb333/ng:webp/ngcb333" width="200" height="200">
+                <br> <span>Quad</span> </div>
+            <div class="room">
+                <img src="https://setupmyhotel.com/images/Room-Type-Queen-Room.jpg?ezimgfmt=rs:300x250/rscb333/ng:webp/ngcb333" width="200" height="200">
+                <br> <span>Queen</span>
+            </div>
+            <div class="room">
+                <img src="https://setupmyhotel.com/images/Room-Type-King-Room.jpg?ezimgfmt=rs:300x250/rscb333/ng:webp/ngcb333" width="200" height="200">
+                <br> <span>King</span>
+            </div>
+        </div>
+        <br>
+        <div class="desc" style="font-family:'Lucida Handwriting',cursive;">Dear Guests. We are pleased to invite you to Hotel GRANDEUR.
+        <br><br>
+        <img src="https://u.profitroom.pl/2019-hotelgorzow-pl/thumb/0x900/uploads/Hotel/Hotel_Gorzow_Hol_03.jpg" width="700px" height="450px">
+        <p style="word-spacing: 5px;">GRANDEUR is a great place for rest and business. Along with the closest surroundings it is a frequently visited, interesting tourist and sightseeing region. Tourists are attracted by wonderful natural conditions, large forest areas and numerous picturesque lakes. Investors are attracted by the dynamically developing part of the city's industry.
+
+At Hotel GRANDEUR, we care for a pleasant atmosphere during your stay and professional service.
+In the morning we serve a varied breakfast, which is regularly praised by our guests.
+At Hotel GRANDEUR we offer professional services in the field of comprehensive organization of business and family events.</p>
+    </div>
+<footer ><br><a href="#">about us</a><br>
+    <a href="#">contact us</a><br>
+    <a href="#">+919090090099</a></footer>
+        </span>
+        </body>
+        </html>
